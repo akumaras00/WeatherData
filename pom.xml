@@ -23,6 +23,7 @@
 		<scala.compat.version>2.11</scala.compat.version>
 	</properties>
 
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.scala-lang</groupId>
