@@ -5,10 +5,6 @@ pipeline {
         pollSCM('*/1 * * * *') // every 1 minute fortesting
     }
     
-    tools { 
-        maven 'Maven 3.3.9' 
-    }
-    
     stages {
         stage ('Initialize') {
             steps {
