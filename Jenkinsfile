@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     triggers {
-        pollSCM('*/1 * * * *') // every 1 minute fortesting
+        pollSCM('*/2 * * * *') // every 2 minute fortesting
     }
     
     stages {
