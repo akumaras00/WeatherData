@@ -1,8 +1,12 @@
 pipeline {
     agent any
+    
+    triggers {
+        pollSCM('*/15 * * * *') // every 15 minutes
+    }
+    
     tools { 
         maven 'Maven 3.3.9' 
-        jdk 'jdk8' 
     }
     
     stages {
