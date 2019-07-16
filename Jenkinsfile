@@ -20,5 +20,9 @@ pipeline {
                 echo 'This is a minimal pipeline.'
             }
         }
+        
+        stage ('Starting test job') {
+             build job: 'test', parameters: []
+        }
     }
 }
