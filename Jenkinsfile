@@ -22,7 +22,9 @@ pipeline {
         }
         
         stage ('Starting test job') {
-             build job: 'test', parameters: []
+             steps {
+                 build job: 'test', parameters: []
+             }
         }
     }
 }
